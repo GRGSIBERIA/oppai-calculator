@@ -12,10 +12,17 @@ module.exports = {
   target: 'electron',
   module: {
       rules: [
-          { test: /\.ts$/, loader: 'ts-loader', options:{appendTsSuffixTo: [/\.vue$/]} },
+          { 
+            test: /\.ts$/, 
+            loader: 'ts-loader', 
+            options:{appendTsSuffixTo: [/\.vue$/]},
+            enforce: 'pre',
+            exclude: /(node_modules)/
+          },
           { test: /\.vue$/, loader: 'vue-loader' },
           { test: /\.(pug|jade)$/, loader: ["raw-loader", "pug-html-loader"] },
-          { test: /\.css$/, loader: ["style-loader", "css-loader"] }
+          { test: /\.css$/, loader: ["style-loader", "css-loader"] },
+          { test: /\.js$/, loader: 'eslint-loader'},
       ]
   }
 }
