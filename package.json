@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "A minimal Electron application written with Typescript",
   "scripts": {
-    "build": "tsc",
+    "build": "webpack",
+    "test": "echo \"Error\" && exit 1",
     "lint": "tslint -c tslint.json -p tsconfig.json",
-    "start": "npm run build && electron ./dist/main.js"
+    "start": "npm run build && electron ./build/main.js"
   },
   "repository": "https://github.com/GRGSIBERIA/oppai-calculator/",
   "keywords": [
@@ -23,6 +24,7 @@
     "vue": "^2.5.16",
     "vue-loader": "^14.2.2",
     "vue-template-compiler": "^2.5.16",
-    "webpack": "^4.3.0"
+    "webpack": "^4.3.0",
+    "webpack-cli": "^2.0.13"
   }
 }

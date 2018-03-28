@@ -2,8 +2,20 @@ import { app } from "electron";
 import * as Electron from "electron";
 import * as path from "path";
 import * as url from "url";
+import Vue from "vue";
 
 let mainWindow: Electron.BrowserWindow;
+
+let v = new Vue({
+    el: "#app",
+    template: `
+        <div> Hello {{name}}</div>
+        Name: <input v-model="name" type="text">
+        `,
+    data: {
+        name: "World"
+    }
+})
 
 function createWindow() {
     // Create the browser window.
@@ -20,7 +32,7 @@ function createWindow() {
     }));
 
     // Open the DevTools.
-    //mainWindow.webContents.openDevTools();
+    mainWindow.webContents.openDevTools();
 
     // Emitted when the window is closed.
     mainWindow.on("closed", () => {
