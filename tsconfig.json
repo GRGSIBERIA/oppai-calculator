@@ -1,19 +1,21 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "sourceMap": true,
-    "outDir": "./build/",
-    "baseUrl": ".",
-    "paths": {
-      "*": ["node_modules/*"]
-    },
-    "strict": true,
-    "target": "es5",
-    "moduleResolution": "node"
+      "target": "ES6",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "noImplicitThis": true,
+      "outDir": "./dist/main",
+      "types": [
+          "node"
+      ]
   },
   "include": [
-    "./src/**/*"
+      "./src/main/*.ts"
+  ],
+  "exclude": [
+      "node_modules",
+      "**/node_modules/*",
+      "./src/main/models/*"
   ]
 }

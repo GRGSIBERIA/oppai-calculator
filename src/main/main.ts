@@ -1,21 +1,5 @@
-import { app, BrowserWindow } from "electron";
-import * as path from "path";
-import * as url from "url";
-
-let mainWindow: Electron.BrowserWindow;
-
-let v = new Vue({
-    el: "#app",
-    template: `
-        <div> Hello {{name}}</div>
-        Name: <input v-model="name" type="text">
-        `,
-    data: {
-        name: "World"
-    }
-});
-
-
+import { app, BrowserWindow } from 'electron';
+ 
 class MyApp {
     mainWindow: Electron.BrowserWindow | null = null;
  
@@ -38,11 +22,7 @@ class MyApp {
                 this.mainWindow = null;
             });
  
-            mainWindow.loadURL(url.format({
-                pathname: path.join(__dirname, "../index.html"),
-                protocol: "file:",
-                slashes: true,
-            }));
+            this.mainWindow.loadURL(`file://${__dirname}/../renderer/index.html`);
  
             // this.mainWindow.webContents.openDevTools();
         });
@@ -50,14 +30,3 @@ class MyApp {
 }
  
 const myapp = new MyApp(app);
-
-
-
-import Vue from 'vue';
-import App from './App.vue';
- 
-new Vue({
-    el: '#app',
-    template: '<App/>',
-    components: {App}
-});
