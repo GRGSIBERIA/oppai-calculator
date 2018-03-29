@@ -26,3 +26,5 @@ export class MyApp {
         }
     }
 }
+
+const myapp = new MyApp(app);

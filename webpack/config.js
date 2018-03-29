@@ -7,7 +7,7 @@ const argv = process.argv.slice(2);
 
 module.exports = {
     entry: {
-        app: path.resolve(__dirname, '../', 'src/ts/index.ts')
+        app: path.resolve(__dirname, '../', 'src/ts/main.ts')
     },
     output: {
         path: path.resolve(__dirname, '../', 'public'),
