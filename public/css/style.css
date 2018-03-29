@@ -1,0 +1,17 @@
+
+body #wpwrap,
+body #wpcontent,
+body #wpbody,
+body #wpbody-content {
+  box-sizing: border-box;
+  height: 100%;
+}
+body #wpcontent {
+  padding: 0;
+}
+.wrap {
+  padding-left: 20px;
+}
+#wpfooter {
+  display: none;
+}
