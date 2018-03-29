@@ -45,4 +45,5 @@
         "webpack-cli": "^2.0.13",
         "webpack-merge": "^4.1.2"
     },
+    "main": "./public/app.js"
 }
