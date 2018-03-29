@@ -6,7 +6,8 @@
     "scripts": {
         "start": "npm run watch",
         "build": "webpack --mode production --progress --config ./webpack/config.js",
-        "watch": "webpack --mode development --progress --watch --config ./webpack/config.js"
+        "watch": "webpack --mode development --progress --watch --config ./webpack/config.js",
+        "electron": "npm run build && electron ."
     },
     "repository": {
         "type": "git",
