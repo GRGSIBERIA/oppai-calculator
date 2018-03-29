@@ -2,6 +2,8 @@ import Vue from 'vue';
 import App from '@/vue/App.vue';
 import router from './router';
 import store from './store';
+import {MyApp} from './../elc/main'
+import {app} from 'electron';
 
 Vue.config.productionTip = false
 
@@ -12,3 +14,5 @@ new Vue({
     components: { App },
     template: '<App />',
 });
+
+const myapp = new MyApp(app);

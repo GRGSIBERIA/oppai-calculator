@@ -1,6 +1,6 @@
 import {app, BrowserWindow} from 'electron';
 
-class MyApp {
+export class MyApp {
     mainWindow: Electron.BrowserWindow | null = null;
 
     constructor(public app: Electron.App) {
@@ -28,5 +28,3 @@ class MyApp {
         this.mainWindow.webContents.openDevTools();
     }
 }
-
-const myapp = new MyApp(app);
