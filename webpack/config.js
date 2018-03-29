@@ -26,6 +26,9 @@ module.exports = {
     ],
     module: rules,
     optimization: optimization,
+    node: {
+        fs: 'empty'
+    }
 };
 
 if (argv.includes('production')) {
