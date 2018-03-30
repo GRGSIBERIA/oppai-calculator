@@ -16,7 +16,7 @@ export default class VueComponent extends Vue {
             <li class="first">
                 <router-link :to="{ name: 'index' }">Index</router-link>
             </li>
-            <li class="last">
+            <li>
                 <router-link :to="{ name: 'config' }">Config</router-link>
             </li>
         </ul>
