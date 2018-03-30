@@ -15,8 +15,7 @@ export default class VueComponent extends Vue { }
 <!-- template -->
 <template>
     <div>
-        <p>Hello, world</p>
-        <Nav />
+        <Nav /><br>
         <router-view></router-view>
     </div>
 </template>
@@ -35,3 +34,4 @@ body {
     user-select: none;
 }
 </style>
+
