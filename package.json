@@ -7,7 +7,8 @@
     "scripts": {
         "start": "webpack-dev-server --mode development --progress --config ./webpack/development.js",
         "build": "webpack --mode production --progress --config ./webpack/production.js",
-        "watch": "webpack --mode development --progress --watch --config ./webpack/development.js"
+        "watch": "webpack --mode development --progress --watch --config ./webpack/development.js",
+        "electron": "electron ."
     },
     "repository": {
         "type": "git",

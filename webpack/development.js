@@ -34,7 +34,7 @@ module.exports = [{
         __filename: false
     }
 }, {
-    // target: 'electron-renderer',
+    target: 'electron-renderer',
     context: resolve('.'),
     devtool: 'cheap-module-eval-source-map',
     entry: {
