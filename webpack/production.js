@@ -41,7 +41,6 @@ module.exports = [{
     },
     output: {
         path: resolve('public'),
-        publicPath: '/',
         filename: '[name].js'
     },
     resolve: {
