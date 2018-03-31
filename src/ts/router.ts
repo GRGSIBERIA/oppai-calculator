@@ -3,6 +3,8 @@ import Router from 'vue-router';
 
 import Index from '@/vue/views/Index.vue';
 import Config from '@/vue/views/Config.vue';
+import OppaiInput from '@/vue/views/OppaiInput.vue';
+import OppaiCalculate from '@/vue/views/OppaiCalculate.vue';
 
 Vue.use(Router);
 
@@ -19,5 +21,13 @@ export default new Router({
         path: '/config',
         name: 'config',
         component: Config
+    }, {
+        path: '/oppai/input',
+        name: 'oppai-input',
+        component: OppaiInput
+    }, {
+        path: '/oppai/input',
+        name: 'oppai-calculate',
+        component: OppaiCalculate
     }]
 });

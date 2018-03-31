@@ -3,10 +3,12 @@
 import Vue from 'vue';
 import Component from 'vue-class-component';
 import Nav from '@/vue/components/Nav.vue';
+import InputScreen from '@/vue/components/InputScreen.vue';
+import CalculateScreen from '@/vue/components/CalculateScreen.vue';
 
 @Component<VueComponent>({
     components: {
-        Nav,
+        InputScreen, CalculateScreen
     },
 })
 export default class VueComponent extends Vue { }
@@ -15,30 +17,46 @@ export default class VueComponent extends Vue { }
 <!-- template -->
 <template>
     <div>
-        <Nav />
-        <router-view></router-view>
+        <!--<Nav /><br>-->
+        <div id="main-screen">
+            <!--
+            <router-view id="box-left"></router-view>
+            <router-view id="box-right"></router-view>
+            -->
+            <InputScreen id="box-left" />
+            <CalculateScreen id="box-right" />
+        </div>
     </div>
 </template>
 
 <!-- style -->
 <style lang="scss">
-body #wpwrap,
-body #wpcontent,
-body #wpbody,
-body #wpbody-content {
-    box-sizing: border-box;
+body {
+    color: red;
+}
+
+.column {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#main-screen {
     height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
-body #wpcontent {
-    padding: 0;
+#box-left {
+    width: 50%;
 }
-
-.wrap {
-    padding-left: 20px;
-}
-
-#wpfooter {
-    display: none;
+#box-right {
+    width: 50%;
 }
 </style>
+

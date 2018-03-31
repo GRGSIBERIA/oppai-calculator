@@ -2,7 +2,6 @@
 <script lang="ts">
 import Vue from 'vue';
 import Component from 'vue-class-component';
-import Sample from '@/vue/components/Sample.vue';
 
 @Component<VueComponent>({})
 export default class VueComponent extends Vue { }
@@ -10,7 +9,7 @@ export default class VueComponent extends Vue { }
 
 <!-- template -->
 <template>
-    <p>index</p>
+    <p>oppai output</p>
 </template>
 
 <!-- style -->
