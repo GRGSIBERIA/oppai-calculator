@@ -16,7 +16,10 @@ export default class VueComponent extends Vue { }
 <template>
     <div>
         <Nav /><br>
-        <router-view></router-view>
+        <div id="main-screen">
+            <router-view id="box-left"></router-view>
+            <router-view id="box-right"></router-view>
+        </div>
     </div>
 </template>
 
@@ -26,12 +29,28 @@ body {
     color: red;
 }
 
-.example {
-    display: grid;
-    background: linear-gradient(to bottom, white, black);
-    transition: all .5s;
+.column {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
 
-    user-select: none;
+#main-screen {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#box-left {
+    width: 50%;
+}
+#box-right {
+    width: 50%;
 }
 </style>
 
