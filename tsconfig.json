@@ -6,6 +6,7 @@
         "strict": true,
         "sourceMap": true,
         "experimentalDecorators": true,
+        "strictPropertyInitialization": false,
         "baseUrl": "./",
         "paths": {
             "@": [
