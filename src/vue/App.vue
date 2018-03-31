@@ -25,18 +25,6 @@ export default class VueComponent extends Vue { }
 
 <!-- style -->
 <style lang="scss">
-body {
-    color: red;
-}
-
-.column {
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
 
 #main-screen {
     height: 100%;
@@ -48,9 +36,17 @@ body {
 
 #box-left {
     width: 50%;
+    height: 100vh;
+    background-color: #367ABD;
+    color: #EB7B2D;
+    margin: 0 0 0 0;
 }
 #box-right {
     width: 50%;
+    height: 100vh;
+    background-color: #F3A530;
+    color: #30499B;
+    margin: 0 0 0 0;
 }
 </style>
 

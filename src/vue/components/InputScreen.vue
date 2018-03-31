@@ -14,7 +14,9 @@ export default class VueComponent extends Vue { }
 
 <!-- template -->
 <template>
-    <OppaiInput />
+    <div id="op-input">
+        <OppaiInput />
+    </div>
 </template>
 
 <!-- style -->
