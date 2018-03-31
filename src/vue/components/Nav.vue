@@ -3,10 +3,8 @@
 import Vue from 'vue';
 import Component from 'vue-class-component';
 
-@Component<VueComponent>({
-})
-export default class VueComponent extends Vue {
-}
+@Component<VueComponent>({})
+export default class VueComponent extends Vue {}
 </script>
 
 <!-- template -->

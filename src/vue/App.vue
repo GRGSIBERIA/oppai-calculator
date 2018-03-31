@@ -3,10 +3,12 @@
 import Vue from 'vue';
 import Component from 'vue-class-component';
 import Nav from '@/vue/components/Nav.vue';
+import InputScreen from '@/vue/components/InputScreen.vue';
+import CalculateScreen from '@/vue/components/CalculateScreen.vue';
 
 @Component<VueComponent>({
     components: {
-        Nav,
+        InputScreen, CalculateScreen
     },
 })
 export default class VueComponent extends Vue { }
@@ -15,10 +17,14 @@ export default class VueComponent extends Vue { }
 <!-- template -->
 <template>
     <div>
-        <Nav /><br>
+        <!--<Nav /><br>-->
         <div id="main-screen">
+            <!--
             <router-view id="box-left"></router-view>
             <router-view id="box-right"></router-view>
+            -->
+            <InputScreen id="box-left" />
+            <CalculateScreen id="box-right" />
         </div>
     </div>
 </template>
