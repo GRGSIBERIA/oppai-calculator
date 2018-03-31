@@ -37,16 +37,18 @@ export default class VueComponent extends Vue { }
 #box-left {
     width: 50%;
     height: 100vh;
-    background-color: #367ABD;
-    color: #EB7B2D;
+    background-color: #30499B;
+    color: white;
     margin: 0 0 0 0;
+    padding-left: 5vw;
 }
 #box-right {
     width: 50%;
     height: 100vh;
-    background-color: #F3A530;
-    color: #30499B;
+    background-color: #EB7B2D;
+    color: white;
     margin: 0 0 0 0;
+    padding-left: 5vw;
 }
 </style>
 
