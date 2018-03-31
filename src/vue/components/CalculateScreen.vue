@@ -2,14 +2,19 @@
 <script lang="ts">
 import Vue from 'vue';
 import Component from 'vue-class-component';
+import OppaiCalculate from '@/vue/views/OppaiCalculate.vue';
 
-@Component<VueComponent>({})
+@Component<VueComponent>({
+    components: {
+        OppaiCalculate
+    }
+})
 export default class VueComponent extends Vue { }
 </script>
 
 <!-- template -->
 <template>
-    <p>calculate</p>
+    <OppaiCalculate />
 </template>
 
 <!-- style -->

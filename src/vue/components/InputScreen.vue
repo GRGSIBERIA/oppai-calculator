@@ -2,14 +2,19 @@
 <script lang="ts">
 import Vue from 'vue';
 import Component from 'vue-class-component';
+import OppaiInput from '@/vue/views/OppaiInput.vue';
 
-@Component<VueComponent>({})
+@Component<VueComponent>({
+    components: {
+        OppaiInput
+    }
+})
 export default class VueComponent extends Vue { }
 </script>
 
 <!-- template -->
 <template>
-    <p>input</p>
+    <OppaiInput />
 </template>
 
 <!-- style -->
