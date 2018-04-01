@@ -16,7 +16,7 @@ export default class VueComponent extends Vue { }
     <div>
         <p>oppai input</p>
         <p>
-            <InputForm :title="test" :value="hoge" />
+            <InputForm v-bind:title="hogehoge" />
         </p>
     </div>
 </template>

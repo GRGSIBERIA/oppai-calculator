@@ -5,16 +5,10 @@ import Component from 'vue-class-component';
 import { Prop } from 'vue-property-decorator';
 
 
-@Component<InputForm>({
-    watch: {
-        done: function(value, oldValue) {
-            console.log(`check chenged: ${this.title}, ${this.value}`);
-        }
-    }
-})
+@Component<InputForm>({})
 export default class InputForm extends Vue {
-    @Prop() title: string;
-    @Prop() value: string;
+    @Prop({default: "test", type: String}) title: string;
+    @Prop({default: "test", type: String}) dataValue: string;
 }
 
 </script>
@@ -22,7 +16,12 @@ export default class InputForm extends Vue {
 <!-- template -->
 <template>
     <div>
-        {{title}}
+        <p>
+            hoge
+        </p>
+        <p>
+            {{ title }}
+        </p>
     </div>
 </template>
 
