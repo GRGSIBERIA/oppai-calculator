@@ -2,23 +2,10 @@
 <script lang="ts">
 import Vue from 'vue';
 import Component from 'vue-class-component';
+import { Prop } from 'vue-property-decorator';
 
 
 @Component<InputForm>({
-    props: {
-        title: {type: String, required: true},
-        value: {type: String, required: true}
-    },
-    template: `
-        <div>
-            <p>
-                <input v-model="{{title}}">
-            </p>
-            <p>
-                {{value}}
-            </p>
-        </div>
-    `,
     watch: {
         done: function(value, oldValue) {
             console.log(`check chenged: ${this.title}, ${this.value}`);
@@ -26,15 +13,17 @@ import Component from 'vue-class-component';
     }
 })
 export default class InputForm extends Vue {
-    title!: string;
-    value!: string;
+    @Prop() title: string;
+    @Prop() value: string;
 }
 
 </script>
 
 <!-- template -->
 <template>
-    
+    <div>
+        {{title}}
+    </div>
 </template>
 
 <!-- style -->
