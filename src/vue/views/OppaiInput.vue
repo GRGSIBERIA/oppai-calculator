@@ -16,7 +16,7 @@ export default class VueComponent extends Vue { }
     <div>
         <p>oppai input</p>
         <p>
-            <InputForm title="radius" dataValue="mm" />
+            <InputForm title="radius" unit="mm" />
         </p>
     </div>
 </template>
