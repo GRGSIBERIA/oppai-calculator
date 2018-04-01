@@ -11,6 +11,9 @@
         "paths": {
             "@": [
                 "src"
+            ],
+            "vue-property-decorator": [
+                "/node_modules/vue-property-decorator/lib/vue-property-decorator"
             ]
         }
     }
