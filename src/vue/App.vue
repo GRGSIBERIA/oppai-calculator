@@ -2,7 +2,6 @@
 <script lang="ts">
 import Vue from 'vue';
 import Component from 'vue-class-component';
-import Nav from '@/vue/components/Nav.vue';
 import InputScreen from '@/vue/components/InputScreen.vue';
 import CalculateScreen from '@/vue/components/CalculateScreen.vue';
 
@@ -17,12 +16,7 @@ export default class VueComponent extends Vue { }
 <!-- template -->
 <template>
     <div>
-        <!--<Nav /><br>-->
         <div id="main-screen">
-            <!--
-            <router-view id="box-left"></router-view>
-            <router-view id="box-right"></router-view>
-            -->
             <InputScreen id="box-left" />
             <CalculateScreen id="box-right" />
         </div>
@@ -31,18 +25,6 @@ export default class VueComponent extends Vue { }
 
 <!-- style -->
 <style lang="scss">
-body {
-    color: red;
-}
-
-.column {
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
 
 #main-screen {
     height: 100%;
@@ -54,9 +36,19 @@ body {
 
 #box-left {
     width: 50%;
+    height: 100vh;
+    background-color: #30499B;
+    color: white;
+    margin: 0 0 0 0;
+    padding-left: 5vw;
 }
 #box-right {
     width: 50%;
+    height: 100vh;
+    background-color: #EB7B2D;
+    color: white;
+    margin: 0 0 0 0;
+    padding-left: 5vw;
 }
 </style>
 
