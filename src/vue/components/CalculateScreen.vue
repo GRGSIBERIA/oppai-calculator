@@ -14,7 +14,9 @@ export default class VueComponent extends Vue { }
 
 <!-- template -->
 <template>
-    <OppaiCalculate />
+    <div id="op-calc">
+        <OppaiCalculate />
+    </div>
 </template>
 
 <!-- style -->

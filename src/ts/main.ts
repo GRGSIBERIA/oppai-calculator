@@ -8,8 +8,8 @@ console.log(__dirname);
 function createWindow() {
     // Create the browser window.
     mainWindow = new BrowserWindow({
-        height: 600,
-        width: 800,
+        height: 1024,
+        width: 768,
     });
 
     // and load the index.html of the app.
